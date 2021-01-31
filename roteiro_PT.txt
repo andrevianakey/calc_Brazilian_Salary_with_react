@@ -1,0 +1,24 @@
+Trabalho desenvolvido no módulo 2 do Bootcamp Online - Desenvolvedor Full Stack, do IGTI.
+==========================
+O trabalho consiste emn  implementar o cálculo de salário líquido e cálculo de IR 
+   conforme regras de:
+   https://www.todacarreira.com/calculo-salario-liquido/
+
+   
+- App.js, criou-se o  state com fullSalary = 1000
+
+- Componentes:
+    InputFullSalary, do tipo number, valor mínimo
+      de 1000 e step 100. Evento para onChange, que
+      vai invocar handleSalaryChange de App.js.
+
+   - InputReadOnly, do tipo text, que vai receber 
+      os demais dados do salário com formatação
+      para moeda, através de Intl.     
+
+   - ProportionBar, que vai montar uma div com a proporção
+      de descontoINSS, descontoIRPF e salarioLiquido
+
+- render():
+   Implementou-se a chamada à função calculateSalaryFrom
+      obtendo os dados Montando assim a tela com os componentes criados. 
